@@ -8,7 +8,7 @@ const Uri = `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API
 
 // This function gets called at build time on server-side.
 // It won't be called on client-side, so you can even do
-// direct database queries. 
+// direct database queries.
 export async function getServerSideProps(){
   const res = await fetch(Uri);
   const data = await res.json();
@@ -64,8 +64,8 @@ export default function Home({ data }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Get the sources{' '}
+          <img src="/logo-github.svg" alt="Github Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
