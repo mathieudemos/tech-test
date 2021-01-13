@@ -1,53 +1,61 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
-export default function Home() {
+const API_KEY = process.env.API_KEY;
+const Uri = `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`;
+
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries. 
+export async function getServerSideProps(){
+  const res = await fetch(Uri);
+  const data = await res.json();
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+export default function Home({ data }) {
+  console.log(data);
+  const { articles = [] } = data;
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Mathieu TechTest</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          News from TechCrunch
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <p className={styles.description}>
+            TechTestDernierCri
+          </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <ul className={styles.grid}>
+          { articles.map( article => {
+              const { id = articles.indexOf(article), title, author } = article
+              return (
+                <li key={ id } className={styles.card}>
+                <Link href={`/articles/${ id }`} >
+                  <a>
+                    <h3> { title } </h3>
+                    <p> Written by { author } </p>
+                    <p> Take a look... 👉 </p>
+                  </a>
+                </Link>
+                </li>
+              )
+            }
+          ) }
+        </ul>
       </main>
 
       <footer className={styles.footer}>
