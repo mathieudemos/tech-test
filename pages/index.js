@@ -29,16 +29,23 @@ export default function Home({ data }) {
         <title>Mathieu TechTest</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           News from TechCrunch
         </h1>
-
           <p className={styles.description}>
-            TechTestDernierCri
+            [ DernierCri - TechTest ]
           </p>
-
+          <button>
+          <a
+            href="https://github.com/mathieudemos/tech-test.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get the sources{' '}
+            <img src="/logo-github.svg" alt="Github Logo" className={styles.logo} />
+          </a>
+          </button>
         <ul className={styles.grid}>
           { articles.map( article => {
               const { id = articles.indexOf(article), title, author } = article
@@ -57,14 +64,13 @@ export default function Home({ data }) {
           ) }
         </ul>
       </main>
-
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/mathieudemos/tech-test.git"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Get the sources{' '}
+          Developed by{' '}Mathieu Diawara
           <img src="/logo-github.svg" alt="Github Logo" className={styles.logo} />
         </a>
       </footer>

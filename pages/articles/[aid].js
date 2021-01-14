@@ -27,7 +27,10 @@ const OneArticle = ({ data }) => {
   const router = useRouter()
   const { aid } = router.query
   const { articles = [] } = data;
-  const { content = articles[aid].content, image = articles[aid].urlToImage, publish = articles[aid].publishedAt } = articles
+  const { content = articles[aid].content,
+          image = articles[aid].urlToImage,
+          publish = articles[aid].publishedAt
+        } = articles
   const back = BackToHome;
 
   return (
