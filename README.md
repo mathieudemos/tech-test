@@ -2,7 +2,7 @@ This is a Next.js project bootstrapped with:
 
 `yarn create-next-app`
 
-# Getting Started
+#### Getting Started
 
 Environment requirements:
 
@@ -38,7 +38,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-# Deploy on Vercel
+#### Deploy on Vercel
 
 Clone these sources in your GitHub Repository:
 
