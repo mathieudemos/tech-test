@@ -2,9 +2,9 @@ This is a Next.js project bootstrapped with:
 
 `yarn create-next-app`
 
-## Getting Started
+# Getting Started
 
-- Env Requirements:
+Environment requirements:
 
 If not already installed, install Node.js and yarn.
 
@@ -38,7 +38,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Deploy on Vercel
+# Deploy on Vercel
 
 Clone these sources in your GitHub Repository:
 
@@ -46,13 +46,14 @@ Clone these sources in your GitHub Repository:
 
 Connect your GiHub account To Vercel
 
-Deployment settings:
+- Deployment settings:
 
-- Build command:
+Build command:
 
 `yarn build`
 
-- Environment variables:
+Environment variables:
 
 input: VARIABLE = `API_KEY`
+
 input: VALUE  = `yourxxxapixxxkeyxxxxxxxxxxxx`
