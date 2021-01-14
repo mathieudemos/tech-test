@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, open project folder:
 
 ```bash
-cd /mathieu-derniercri-techtest
+cd /tech-test
 ```
 Install NodeJS & yarn.
 
@@ -27,10 +27,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-[External NEWS API routes]
-This endpoint can be edited in index.js `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
+External NEWSAPI routes
 
-[External NEWS API routes]
+This endpoint can be edited in index.js
+`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
+
 
 ## Deploy on Vercel
 
