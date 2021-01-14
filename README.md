@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Next.js project bootstrapped with
+
+[`yarn create-next-app`]
 
 ## Getting Started
 
@@ -7,7 +9,7 @@ First, open project folder:
 ```bash
 cd /tech-test
 ```
-- Install NodeJS & yarn.
+- Install Node.js & yarn.
 
 Download packaged dependencies:
 
