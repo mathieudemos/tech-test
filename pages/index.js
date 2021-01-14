@@ -31,7 +31,7 @@ export default function Home({ data }) {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          News from TechCrunch
+          News App
         </h1>
           <p className={styles.description}>
             [ DernierCri - TechTest ]
