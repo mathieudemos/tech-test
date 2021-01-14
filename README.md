@@ -7,7 +7,7 @@ First, open project folder:
 ```bash
 cd /tech-test
 ```
-Install NodeJS & yarn.
+- Install NodeJS & yarn.
 
 Download packaged dependencies:
 
