@@ -1,6 +1,6 @@
-This is a Next.js project bootstrapped with
+This is a Next.js project bootstrapped with:
 
-[`yarn create-next-app`]
+`yarn create-next-app`
 
 ## Getting Started
 
