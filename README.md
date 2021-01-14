@@ -18,28 +18,23 @@ Download packaged dependencies:
 ```bash
 yarn install
 ```
-
 Get your NewsAPI Key :
 
 `http://newsapi.org/`
-
-External NewsAPI endpoint can be edited in index.js:
-
-`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
 
 Open and edit `.env.local` file, replace the `YOUR API KEY` value, then save the file:
 
 `API_KEY=YOUR API KEY`
 
-```bash
-nano .env.local
-```
+External NewsAPI endpoint can be edited in index.js:
+
+`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
+
 Then, run the development server:
 
 ```bash
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
