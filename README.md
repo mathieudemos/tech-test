@@ -27,9 +27,10 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-External NEWSAPI routes
+- External NEWSAPI routes
 
 This endpoint can be edited in index.js
+
 `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
 
 
