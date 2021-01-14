@@ -4,19 +4,32 @@ This is a Next.js project bootstrapped with:
 
 ## Getting Started
 
+- Env Requirements:
+
+If not already installed, install Node.js and yarn.
+
 First, open project folder:
 
 ```bash
 cd /tech-test
 ```
-- Install Node.js & yarn.
-
 Download packaged dependencies:
 
 ```bash
 yarn install
 ```
-Add & Save Your API_KEY in .env file:
+
+Get your NewsAPI Key :
+
+`http://newsapi.org/`
+
+External NewsAPI endpoint can be edited in index.js:
+
+`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
+
+Open and edit `.env.local` file, replace the `YOUR API KEY` value, then save the file:
+
+`API_KEY=YOUR API KEY`
 
 ```bash
 nano .env.local
@@ -29,11 +42,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- External NEWSAPI routes
 
-This endpoint can be edited in index.js
-
-`http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${API_KEY}`.
 
 
 ## Deploy on Vercel
